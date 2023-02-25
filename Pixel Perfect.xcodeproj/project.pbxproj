@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CE4223629918DD300F8E28F /* Filter.enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4223529918DD300F8E28F /* Filter.enum.swift */; };
+		4CE422382993C71200F8E28F /* ColorAdjustment.enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE422372993C71200F8E28F /* ColorAdjustment.enum.swift */; };
 		4CF1B503299017CD0076DFEF /* Pixel_PerfectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1B502299017CD0076DFEF /* Pixel_PerfectApp.swift */; };
 		4CF1B505299017CD0076DFEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1B504299017CD0076DFEF /* ContentView.swift */; };
 		4CF1B507299017CE0076DFEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF1B506299017CE0076DFEF /* Assets.xcassets */; };
 		4CF1B50A299017CE0076DFEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF1B509299017CE0076DFEF /* Preview Assets.xcassets */; };
 		4CF1B50C299017CE0076DFEF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1B50B299017CE0076DFEF /* Persistence.swift */; };
 		4CF1B50F299017CE0076DFEF /* Pixel_Perfect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1B50D299017CE0076DFEF /* Pixel_Perfect.xcdatamodeld */; };
+		4CF1B5182990294D0076DFEF /* PhotoEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1B5172990294D0076DFEF /* PhotoEditView.swift */; };
+		4CF1B51F2990FF4A0076DFEF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1B51E2990FF4A0076DFEF /* ImagePicker.swift */; };
+		4CF1B52429917AB60076DFEF /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1B52329917AB60076DFEF /* FilterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CE4223529918DD300F8E28F /* Filter.enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.enum.swift; sourceTree = "<group>"; };
+		4CE422372993C71200F8E28F /* ColorAdjustment.enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAdjustment.enum.swift; sourceTree = "<group>"; };
 		4CF1B4FF299017CD0076DFEF /* Pixel Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pixel Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF1B502299017CD0076DFEF /* Pixel_PerfectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixel_PerfectApp.swift; sourceTree = "<group>"; };
 		4CF1B504299017CD0076DFEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +31,10 @@
 		4CF1B50B299017CE0076DFEF /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		4CF1B50E299017CE0076DFEF /* Pixel_Perfect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pixel_Perfect.xcdatamodel; sourceTree = "<group>"; };
 		4CF1B510299017CE0076DFEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF1B5172990294D0076DFEF /* PhotoEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditView.swift; sourceTree = "<group>"; };
+		4CF1B51929902B330076DFEF /* Pixel-Perfect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Pixel-Perfect-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4CF1B51E2990FF4A0076DFEF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4CF1B52329917AB60076DFEF /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,11 +48,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CE4223429918DBF00F8E28F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4CE4223529918DD300F8E28F /* Filter.enum.swift */,
+				4CE422372993C71200F8E28F /* ColorAdjustment.enum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		4CF1B4F6299017CD0076DFEF = {
 			isa = PBXGroup;
 			children = (
 				4CF1B501299017CD0076DFEF /* Pixel Perfect */,
 				4CF1B500299017CD0076DFEF /* Products */,
+				4CF1B51D2990EC950076DFEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +77,11 @@
 		4CF1B501299017CD0076DFEF /* Pixel Perfect */ = {
 			isa = PBXGroup;
 			children = (
+				4CE4223429918DBF00F8E28F /* Enums */,
+				4CF1B52029911A290076DFEF /* Components */,
+				4CF1B51A29903BC50076DFEF /* ViewModels */,
+				4CF1B51929902B330076DFEF /* Pixel-Perfect-Info.plist */,
+				4CF1B516299029280076DFEF /* Views */,
 				4CF1B502299017CD0076DFEF /* Pixel_PerfectApp.swift */,
 				4CF1B504299017CD0076DFEF /* ContentView.swift */,
 				4CF1B506299017CE0076DFEF /* Assets.xcassets */,
@@ -73,6 +99,37 @@
 				4CF1B509299017CE0076DFEF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CF1B516299029280076DFEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CF1B5172990294D0076DFEF /* PhotoEditView.swift */,
+				4CF1B51E2990FF4A0076DFEF /* ImagePicker.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CF1B51A29903BC50076DFEF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4CF1B52329917AB60076DFEF /* FilterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4CF1B51D2990EC950076DFEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CF1B52029911A290076DFEF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +203,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF1B50F299017CE0076DFEF /* Pixel_Perfect.xcdatamodeld in Sources */,
+				4CF1B5182990294D0076DFEF /* PhotoEditView.swift in Sources */,
+				4CF1B52429917AB60076DFEF /* FilterViewModel.swift in Sources */,
+				4CF1B51F2990FF4A0076DFEF /* ImagePicker.swift in Sources */,
+				4CE422382993C71200F8E28F /* ColorAdjustment.enum.swift in Sources */,
 				4CF1B50C299017CE0076DFEF /* Persistence.swift in Sources */,
 				4CF1B505299017CD0076DFEF /* ContentView.swift in Sources */,
 				4CF1B503299017CD0076DFEF /* Pixel_PerfectApp.swift in Sources */,
+				4CE4223629918DD300F8E28F /* Filter.enum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +342,14 @@
 				DEVELOPMENT_TEAM = U9Q43DBKTS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pixel-Perfect-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "For Editing Photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,11 +374,14 @@
 				DEVELOPMENT_TEAM = U9Q43DBKTS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pixel-Perfect-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "For Editing Photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
