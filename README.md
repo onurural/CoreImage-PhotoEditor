@@ -1,5 +1,5 @@
 # PhotoEditor
-Boiler plate implementation to apply filter on still images using Core Image Framework
+Boilerplate implementation to apply filter on still images using Core Image Framework
 
 
 Original Photo&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Gloom Filter                            
